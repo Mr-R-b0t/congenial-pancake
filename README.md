@@ -26,10 +26,7 @@
     - [ Installation](#-installation)
     - [ Running congenial-pancake](#-running-congenial-pancake)
     - [ Tests](#-tests)
-- [ Roadmap](#-roadmap)
 - [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
 
 ---
 
