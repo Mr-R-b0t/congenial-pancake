@@ -13,21 +13,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Train {
     @Id
-    private ObjectId id;
+    private ObjectId _id;
+    private String id;
     private String departure;
     private String arrival;
     public String outboundDate;
-    public String outbountTime;
+    public String outboundTime;
     public String returnDate;
     public String returnTime;
     public String numberOfTickets;
     public String ticketClass;
 
-    public Train(String departure, String arrival, String outboundDate, String outbountTime, String returnDate, String returnTime, String numberOfTickets, String ticketClass) {
+    public Train(String id, String departure, String arrival, String outboundDate, String outboundTime, String returnDate, String returnTime, String numberOfTickets, String ticketClass) {
+        this.id = id;
         this.departure = departure;
         this.arrival = arrival;
         this.outboundDate = outboundDate;
-        this.outbountTime = outbountTime;
+        this.outboundTime = outboundTime;
         this.returnDate = returnDate;
         this.returnTime = returnTime;
         this.numberOfTickets = numberOfTickets;
